@@ -1,0 +1,136 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:url(gallery-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navbar-container{
+    text-align: center;
+}
+.title{
+    color:white;
+    font-family: fantasy;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color:orange;
+}
+
+#lowernavbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.style{
+    color: red;
+    font-size: 18px;
+    margin: 20px 20px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:white;
+    font-size: 30px;
+}
+
+h5{
+    margin-top: 50px;
+    color: red;
+    font-size: 30px;
+    font: italic;
+    letter-spacing: 7px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h5:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: orange;
+    font-size: 24px;
+    font: italic;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    position: relative;
+}
+
+.imgSize{
+
+    width: 450x;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.overlay{
+    position: absolute;
+    border-radius: 20px;
+    top :0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:black;
+}
+
+.container:hover .overlay{
+    opacity: 0.6;
+}
+
+.text{
+    position: absolute;
+    font-size: 13px;
+    color: white;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.imgSize:hover{
+    cursor: pointer;
+}
+
+.image:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.wrapper1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wrapper3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

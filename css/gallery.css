@@ -1,0 +1,204 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:url(gallery-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#navbar-container{
+    text-align: center;
+}
+.title{
+    color:white;
+    font-family: fantasy;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color:orange;
+}
+
+#lowernavbar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.style{
+    color: white;
+    font-size: 18px;
+    margin: 20px 20px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:orangered;
+    font-size: 30px;
+}
+
+#gall{
+    margin-top: 50px;
+    text-align: center;
+    /* margin-right:1270px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.style1{
+    color: white;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top:30px;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 30px;
+ } 
+
+#outer{
+    justify-content: center;
+}
+
+.gallery {
+    display: inline-grid;
+    background-color: white;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.imghover{
+    width: 700px;
+    height: 380px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    transition: .5s ease;
+}
+
+.one:hover .gal1 {
+    opacity: 0.4;
+  }
+  
+.one:hover .hoper1 {
+    opacity: 1;
+}
+
+.hoper1{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    margin-top: 140px;
+    width: 500px;
+    margin-top: 175px;
+    margin-left: 110px;
+
+}
+
+.text {
+    color:black;
+    font-size: 20px;
+    text-justify: auto;
+    font-weight: bold;
+  }
+
+
+.hoper2{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    padding-top: 150px;
+    padding-left: 120px;
+}
+
+.two:hover .gal2 {
+    opacity: 0.4;
+  }
+  
+.two:hover .hoper2 {
+    opacity: 1;
+}   
+
+.hoper3{
+    transform-origin: 5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 500px;
+    margin-left: 120px;
+    margin-top: 135px;
+}
+
+.three:hover .gal3 {
+    opacity: 0.2;
+  }
+  
+.three:hover .hoper3 {
+    opacity: 1;
+}   
+
+.img, .video {
+    width: 700px;
+    height: 380px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:800px){
+    #gall{
+       justify-content: center;
+    }      
+
+    .style1{
+        color: white;
+        font-family: fantasy;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top:30px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+     } 
+    
+    .imghover{
+        width: 200px;
+        height: 120px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+        transition: .5s ease;
+    }
+
+    .hoper1, .hoper2,.hoper3{
+        display: none;
+    }
+
+    .img, .video {
+        width: 200px;
+        height: 120px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+}

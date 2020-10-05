@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Register</title>
+    <link rel="stylesheet" href="css/Pre-Register.css">
+    <script src="./javascript/pre-register.js"></script>
+</head>
+<body>
+    <!-- outer -->
+    <div class="outer">
+        <!-- left -->
+        <div class="left-container">
+            <div><img src="./assets/logo.png" class="logo"></div>
+            <span id="welcome">Welcome to Xtreame Chaser</span>
+        </div>
+        <!-- right (register box) -->
+        <div class="right-container">
+            <div><img src="./assets/logo.png" class="logo1"></div>
+            <div class="registerform">
+                <h1 class="style1">Register Now!</h1>
+                <span class="style2">fill the information for new beta player.</span>
+         
+                <form name="form" class="form" action="index.html" onsubmit="return validateRegisterform()"  method="post">
+
+                    <label for="Email"class="style">Email<span class="required">*</span></label> <br>
+                    <input type="text" class="style3" id="email"placeholder="Input your email" name="Email" ><br><br>
+
+                    <label for="Username" class="style">Username<span class="required">*</span></label> <br>
+                    <input type="text" class="style3" id="username"placeholder="Input your username" title="Must contain at least 8 or more characters" oninput="return username()" name="Username" ><br><br>
+
+                    <label for="Password" class="style">Password<span class="required">*</span></label> <br>
+                    <input type="password" class="style3"placeholder="Input your password" id="Password" name="Password" title="Must contain at at least one number and at least 6 or more characters" ><br><br>
+
+                    <label for="repeatPassword" class="style">Repeat Password<span class="required">*</span></label> <br>
+                    <input type="password" class="style3" id="repeatPassword" placeholder="Re-input your password" oninput="return rptpwd()" name="repeatPassword"  ><br>
+                    <span id="rptpwd"></span><br>
+
+                    <label for="gender" class="style">Gender<span class="required">*</span></label> <br>
+                    <input type="radio" name="gender"  value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender"  value="female">
+                    <label for="female">Female</label><br><br>
+                    
+                    
+                    <label for="dob" class="style">Date of Birth<span class="required">*</span></label><br>
+                    <input type="date" class="style3"id="dob" ><br><br>
+
+                    <label for="Nationality" class="style">Nationality<span class="required">*</span></label>  <br>
+                    <select id="Nationality">
+                        <option value="">Choose your Nationality</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Malaysian">Malaysian</option>
+                        <option value="Singaporean">Singaporean</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Korean">Korean</option>  
+                        <option value="Japanese">Japanese</option>
+                        <option value="Indian">Indian</option>
+                        <option value="American">American</option>
+                        <option value="Canadian">Canadian</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Others">Others</option>
+                    </select> <br><br>
+                    
+                    <input type="checkbox"class="style"id="terms" > I agree all statements in <a href="#">User Terms & Privacy</a>. <br><br>
+
+                    <button type="submit" id="register" class="button">Register!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
